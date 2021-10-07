@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:vastum/menu.dart';
+import 'package:vastum/search.dart';
 import 'loading_screen.dart';
 void main() {
   runApp(MyApp());
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
     initialRoute: '/',
     routes: {
       '/': (context) => Loading(),
-      '/mainmenu': (context) => MainMenu()
+      '/mainmenu': (context) => MainMenu(),
+      '/search': (context) => Search()
     }); //Loading
   }
 }

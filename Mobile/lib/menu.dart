@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'dart:ffi';
 import 'dart:io';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +41,19 @@ class _MainMenuState extends State<MainMenu> {
         threshold: 0.1,     
         asynch: true  
       );
-      print(result);
+      String title = result[0]['label'].substring(2);
+      var confidence = result[0]['confidence']*100;
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+            title: Text(
+              "Wykryto: $title"
+            ),
+            content: Text(
+              "Poprawność: ${confidence.toStringAsFixed(2)}%"
+            ),
+        )
+      );
     }
 
     void loadModel() async{
@@ -130,7 +144,9 @@ class _MainMenuState extends State<MainMenu> {
                   ),
                   child:FlatButton(
                       padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.pushNamed(context, '/search');
+                      },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,

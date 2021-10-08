@@ -40,9 +40,6 @@
                     .then(res => {
                         this.results = res.result.records
                     })
-                    this.results.forEach(el => {
-                        console.log(el.Typ)
-                    })
             this.searched = true
             },
         }

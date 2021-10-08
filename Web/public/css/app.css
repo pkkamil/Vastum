@@ -51,6 +51,7 @@ a {
 }
 
 .ecology__header {
+  text-align: center;
   color: #009229;
   text-transform: uppercase;
   font-weight: 400;
@@ -131,5 +132,70 @@ a {
 
 .ecology__destination {
   margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .ecology {
+    padding: 50px 100px;
+  }
+
+  .ecology__header {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ecology {
+    padding: 50px 60px;
+  }
+
+  .ecology__header {
+    font-size: 1.4rem;
+  }
+
+  .ecology__search input {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .ecology {
+    padding: 50px 40px;
+  }
+
+  .ecology__header {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+
+  .ecology {
+    padding: 50px 30px;
+  }
+
+  .ecology__header {
+    font-size: 1.2rem;
+  }
+
+  .ecology__search {
+    text-align: center;
+  }
+
+  .ecology__search input {
+    width: 80%;
+  }
+
+  .ecology__results {
+    margin-top: 30px;
+  }
+
+  .ecology__results__single {
+    padding: 20px;
+  }
 }
 

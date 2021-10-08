@@ -1951,9 +1951,6 @@ __webpack_require__.r(__webpack_exports__);
       }).then(function (res) {
         _this.results = res.result.records;
       });
-      this.results.forEach(function (el) {
-        console.log(el.Typ);
-      });
       this.searched = true;
     }
   }

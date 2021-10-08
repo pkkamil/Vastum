@@ -1,16 +1,37 @@
-# vastum
+# Vastum
+Aplikacja pomagająca segregować odpady.
 
-A new Flutter project.
+# Prezentacja działania aplikacji
+<div style='float:left; margin-right: 25px'>
+<h2>Wyszukiwarka</h2>
+<img src='gifs/search.gif' alt='Gif prezentujący działanie wyszukiwarki'>
+</div>
+<div style='float:left'>
+<h2>Klasyfikacja zdjęcia przy użyciu sztucznej inteligencji</h2>
+<img src='gifs/camera.gif' alt='Gif prezentujący działanie sztucznej inteligencji'>
+</div>
+<div style='clear:both'></div>
+<br> 
 
-## Getting Started
+## Instalacja
 
-This project is a starting point for a Flutter application.
+Aby uruchomić aplikację mobilną na podłączonym do komputera urządzeniu Android/iOS lub na emulatorze należy wykonać następujące polecenia.
 
-A few resources to get you started if this is your first Flutter project:
+Przejście do katalogu aplikacji mobilnej:
+```sh
+cd Mobile
+```
+Instalacja wymaganych pakietów:
+```sh
+flutter pub get
+```
+Zbudowanie aplikacji:
+```sh
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Oficjalna dokumentacja Fluttera dostępna jest [tutaj](https://flutter.dev/docs).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Licencja
+
+MIT
